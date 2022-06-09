@@ -32,6 +32,12 @@
         focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
     }
     .btn-primary {
-        @apply border w-full rounded-md bg-sky-500 border-sky-500 text-slate-100 hover:bg-sky-500/75 hover:border-sky-500/75 transition py-2 my-2 disabled:bg-sky-500/75 disabled:border-sky-500/75
+        @apply border rounded-md bg-sky-500 border-sky-500 text-slate-100 hover:bg-sky-500/75 hover:border-sky-500/75 transition py-2 my-2 disabled:bg-sky-500/75 disabled:border-sky-500/75
+    }
+    .btn-warning {
+        @apply border w-full rounded-md bg-amber-500 border-amber-500 text-slate-100 hover:bg-amber-500/75 hover:border-amber-500/75 transition py-2 my-2 disabled:bg-amber-500/75 disabled:border-amber-500/75
+    }
+    .btn-danger {
+        @apply border w-full rounded-md bg-red-500 border-red-500 text-slate-100 hover:bg-red-500/75 hover:border-red-500/75 transition py-2 my-2 disabled:bg-red-500/75 disabled:border-red-500/75
     }
 }

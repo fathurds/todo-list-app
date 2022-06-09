@@ -67,7 +67,7 @@ function Login() {
             <input name='password' type="password" placeholder='Password' className='form-data' onChange={fieldHandler.bind(this)} />
           </label>
           <p className='text-right mx-1'>Belum punya akun? <span className='text-sky-500 font-bold cursor-pointer' onClick={() => navigate('/register')}>Daftar</span></p>
-          <button className='btn-primary' type='submit' disabled={isLoading || !fields.email || !fields.password ? true : false}>Login</button>
+          <button className='btn-primary w-full' type='submit' disabled={isLoading || !fields.email || !fields.password ? true : false}>Login</button>
         </form>
       </div>
     </div>

@@ -80,7 +80,7 @@ function Register() {
             <input name='confirmPassword' type="password" placeholder='Password' className={fields.confirmPassword.length === 0 || fields.confirmPassword === fields.password ? 'form-data' : 'form-data border-pink-500 focus:border-pink-500 focus:ring-pink-500'} onChange={fieldHandler.bind(this)} />
           </label>
           <p className='text-right mx-1'>Punya Akun? <span className='text-sky-500 font-bold cursor-pointer' onClick={() => navigate('/login')}>Masuk</span></p>
-          <button className='btn-primary' type='submit' disabled={isLoading || fields.password !== fields.confirmPassword || !fields.username || !fields.email || !fields.password ? true : false} >Sign Up</button>
+          <button className='btn-primary w-full' type='submit' disabled={isLoading || fields.password !== fields.confirmPassword || !fields.username || !fields.email || !fields.password ? true : false} >Sign Up</button>
         </form>
       </div>
     </div>
