@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 function Login() {
@@ -11,6 +11,10 @@ function Login() {
   const [message, setMessage] = useState(null);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = 'Login | Fath Todo';
+  }, []);
 
   const fieldHandler = (e) => {
     const dataName = e.target.getAttribute('name');

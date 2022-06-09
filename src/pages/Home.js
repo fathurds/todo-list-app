@@ -35,6 +35,7 @@ function Home() {
   }
 
   useEffect(() => {
+    document.title = 'Fath Todo'
     if (!localStorage.getItem('token')) {
       navigate('/login');
     } else {
